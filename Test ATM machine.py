@@ -6,13 +6,13 @@ Created on Sun Nov 10 18:57:04 2024
 """
 
 def test_withdrawal():
-# Step 1: Create an Account with a specific balance and daily limit
+    # create acc
     account = Account(account_id="12345", balance=500, daily_withdrawal_limit=300)
 
-    # Step 2: Create a Customer linked to the account
+    # Create a Customer linked to the account
     customer = Customer(customer_id="C001", name="Alice", account=account)
 
-    # Step 3: Create an ATM with a set cash reserve
+    # Create an ATM with a set cash reserve
     atm = ATM(cash_available=1000)
 
     # Test Cases
@@ -42,5 +42,5 @@ def test_withdrawal():
     customer.request_withdrawal(atm, 300)
 
 
-# Run the test script
+# Run the test
 test_withdrawal()
