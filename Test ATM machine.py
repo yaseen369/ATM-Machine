@@ -10,7 +10,7 @@ def test_withdrawal():
     account = Account(account_id="12345", balance=500, daily_withdrawal_limit=300)
 
     # Create a Customer linked to the account
-    customer = Customer(customer_id="C001", name="Alice", account=account)
+    customer = Customer(customer_id="C001", name="Priscilla", account=account)
 
     # Create an ATM with a set cash reserve
     atm = ATM(cash_available=1000)
